@@ -26,76 +26,123 @@
   <article>
     <section id="section4_4">
       <div class="bs_p20">
-        <div class="div5">
-          <h1 class="t1_4">訂購清單</h1>
-          <div class="bs_p10"><small>首頁 > 訂購清單</small>
-          <div class="bs_w100 bs_clear"><form class="aTemplate">
-          <p><label class="bs_w10">聯絡人</label><input name="username" type="text" id="username"></p>
-          <p><label class="bs_w10">聯絡電話</label>室內電話<input name="tel" type="text" id="tel"> 手機<input name="mobile" type="text" id="mobile"></p>
-
-<p><label class="bs_w10">送貨地址</label><input name="addr" type="text" id="addr" size="55" maxlength="55"></p>
-<p><label class="bs_w10">配送時間</label><input name="send_date" type="text" id="send_date" size="6">
-                            
-                            <select name="stime" id="stime">
+      <div class="div5">
+        <h1 class="t1_4">訂購清單</h1>
+        <div class="bs_p10"><small>首頁 > 訂購清單</small>
+          <div class="bs_w100 bs_clear">
+            <ul class="ul1">
+              <li>郵局劃撥帳號<br />
+                銀行代碼：700  銀行局號：0401374 匯款帳號：0164008 匯款郵局：魚池郵局 匯款戶名：陳任樺</li>
+              <li>ATM轉帳帳號<br />
+                戶名:正味馨企業有限公司   帳號:台灣銀行(004)           059001119651</li>
+            </ul>
+            <form class="aTemplate">
+              <p>
+                <label class="bs_w10">聯絡人</label>
+                <input name="username" type="text" id="username">
+              </p>
+              <p>
+                <label class="bs_w10">聯絡電話</label>
+                室內電話
+                <input name="tel" type="text" id="tel">
+                手機
+                <input name="mobile" type="text" id="mobile">
+              </p>
+              <p>
+                <label class="bs_w10">送貨地址</label>
+                <input name="addr" type="text" id="addr" size="55" maxlength="55">
+              </p>
+              <p>
+                <label class="bs_w10">配送時間</label>
+                <input name="send_date" type="text" id="send_date" size="6">
+                <select name="stime" id="stime">
+                  
+                  
                                                
-                              <option value="1">早上(9時-12時)</option>
+                              
+                  
+                  <option value="1">早上(9時-12時)</option>
+                  
+                  
                                                
-                              <option value="2">下午(12時-17時)</option>
+                              
+                  
+                  <option value="2">下午(12時-17時)</option>
+                  
+                  
                                                
-                              <option value="3">晚上(17時-20時)</option>
+                              
+                  
+                  <option value="3">晚上(17時-20時)</option>
+                  
+                  
                                              
-                            </select><small>2/9~2/18春節期間之訂單,敬請於2/7(四)前下單</small></p>
-
-<p><label class="bs_w10">備註</label><textarea name="addmemo" cols="65" rows="10"></textarea></p>
-<p><label class="bs_w10">收件人</label><input name="tousername" type="text" id="tousername"></p>
-<p><label class="bs_w10">聯絡電話</label>室內電話<input name="totel" type="text" id="totel">
-                            手機<input name="tomobile" type="text" id="tomobile">
                             
-                            <input name="sames" type="radio" id="sames" onclick="same_up();">
-                            同訂貨人</p>
-
-        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="aTemplate">
-        <thead>
-           <tr>
-              <td width="5%" scope="col">no.</td>
-              <td width="" align="center" scope="col">項目</td>
-              <td width="10%" align="center" scope="col">數量</td>
-              <td align="center" scope="col">單價</td>
-              <td align="center" scope="col"><div align="center">小計</div></td>
-              <td align="center" scope="col">功能</td>
-            </tr></thead>
-          <tbody>
-
-            <tr>
-              <td align="center">1</td>
-              <td><div align="center">七里香 鹹豬肉 350g</div></td>
-              <td><div align="center">1 份</div></td>
-              <td><div align="center">90元</div></td>
-              <td><div align="center">90元</div></td>
-              <td><div align="center"><a href="http://www.8bq.club.tw/delorder.php?oid=52093">取消</a></div></td>
-            </tr>
-            <tr>
-              <td colspan="5" align="center"><div align="center">總價</div></td>
-              <td><div align="center"><strong>90元</strong></div></td>
-            </tr>
-          </tbody>
-        </table><p class="bs_textCenter"><input type="submit" value="填好了，送出訂單"></p></form>
-          </div></div>
+                
+                </select>
+                <small>2/9~2/18春節期間之訂單,敬請於2/7(四)前下單</small></p>
+              <p>
+                <label class="bs_w10">備註</label>
+                <textarea name="addmemo" cols="65" rows="10"></textarea>
+              </p>
+              <p>
+                <label class="bs_w10">收件人</label>
+                <input name="tousername" type="text" id="tousername">
+              </p>
+              <p>
+                <label class="bs_w10">聯絡電話</label>
+                室內電話
+                <input name="totel" type="text" id="totel">
+                手機
+                <input name="tomobile" type="text" id="tomobile">
+                <input name="sames" type="radio" id="sames" onclick="same_up();">
+                同訂貨人</p>
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="aTemplate">
+                <thead>
+                  <tr>
+                    <td width="5%" scope="col">no.</td>
+                    <td width="" align="center" scope="col">項目</td>
+                    <td width="10%" align="center" scope="col">數量</td>
+                    <td align="center" scope="col">單價</td>
+                    <td align="center" scope="col"><div align="center">小計</div></td>
+                    <td align="center" scope="col">功能</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td align="center">1</td>
+                    <td><div align="center">七里香 鹹豬肉 350g</div></td>
+                    <td><div align="center">1 份</div></td>
+                    <td><div align="center">90元</div></td>
+                    <td><div align="center">90元</div></td>
+                    <td><div align="center"><a href="http://www.8bq.club.tw/delorder.php?oid=52093">取消</a></div></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" align="center"><div align="center">總價</div></td>
+                    <td><div align="center"><strong>90元</strong></div></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="bs_textCenter">
+                <input type="submit" value="填好了，送出訂單">
+              </p>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   </article>
-  <aside> </aside>
-  <footer>
+  <aside> </aside>  <footer>
     <ul>
       <li>住址：南投縣埔里鎮中華路257號</li>
-      <li>TEL：049-2422812、049-0913051</li>
-      <li>E-mail：jwa@ms1.168a.com.tw</li>
-      <li>FAX：049-2423898、049-2918483</li>
+      <li>TEL：049-2422812</li>
+      <li>E-mail：jws.food@msa.hinet.net</li>
+      <li>FAX：049-2423898</li>
     </ul>
   </footer>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
 <script type="text/javascript">//<![CDATA[ !window.jQuery && document.write("<script src='js/jquery.min.js'></script> 
-<script src='js/jquery.easing.min.js'></script> 
+<script src='js/jquery.easing.min.js'></script>
 </body>
 </html>
