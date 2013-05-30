@@ -38,6 +38,9 @@ Float
 .bs_left{
 float:left;	
 }
+.bs_center{
+margin: 0 auto;	
+}
 .bs_right{
 float:right;	
 }
